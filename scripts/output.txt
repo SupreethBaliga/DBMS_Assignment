@@ -1,3 +1,4 @@
+For Sqlite3
 1 : ../../data/A-100.csv, ../../data/B-100-3-4.csv
 For Query 1-
 .000600
@@ -8,6 +9,7 @@ For Query 1-
 .000599
 .000623
 Average = 0.000599
+Std. Deviation = 0.000181
  
 For Query 2-
 .001341
@@ -18,6 +20,7 @@ For Query 2-
 .000644
 .000667
 Average = 0.001051
+Std. Deviation = 0.000294
  
 For Query 3-
 .000508
@@ -28,6 +31,7 @@ For Query 3-
 .000482
 .000561
 Average = 0.000509
+Std. Deviation = 0.000058
  
 For Query 4-
 .000581
@@ -38,6 +42,7 @@ For Query 4-
 .000703
 .000785
 Average = 0.000642
+Std. Deviation = 0.000070
  
 2 : ../../data/A-100.csv, ../../data/B-100-5-0.csv
 For Query 1-
@@ -49,6 +54,7 @@ For Query 1-
 .000234
 .000280
 Average = 0.000247
+Std. Deviation = 0.000030
  
 For Query 2-
 .000650
@@ -59,6 +65,7 @@ For Query 2-
 .000569
 .000521
 Average = 0.000608
+Std. Deviation = 0.000068
  
 For Query 3-
 .000319
@@ -69,6 +76,7 @@ For Query 3-
 .000292
 .000288
 Average = 0.000304
+Std. Deviation = 0.000019
  
 For Query 4-
 .000565
@@ -79,6 +87,7 @@ For Query 4-
 .000449
 .000410
 Average = 0.000463
+Std. Deviation = 0.000054
  
 3 : ../../data/A-100.csv, ../../data/B-100-10-3.csv
 For Query 1-
@@ -90,6 +99,7 @@ For Query 1-
 .000258
 .000207
 Average = 0.000432
+Std. Deviation = 0.000254
  
 For Query 2-
 .001047
@@ -100,6 +110,7 @@ For Query 2-
 .000936
 .000874
 Average = 0.000910
+Std. Deviation = 0.000099
  
 For Query 3-
 .000381
@@ -110,6 +121,7 @@ For Query 3-
 .000375
 .000398
 Average = 0.000411
+Std. Deviation = 0.000055
  
 For Query 4-
 .000651
@@ -120,6 +132,7 @@ For Query 4-
 .000676
 .000641
 Average = 0.000701
+Std. Deviation = 0.000088
  
 4 : ../../data/A-1000.csv, ../../data/B-1000-5-0.csv
 For Query 1-
@@ -131,6 +144,7 @@ For Query 1-
 .000315
 .000305
 Average = 0.000455
+Std. Deviation = 0.000223
  
 For Query 2-
 .004411
@@ -141,6 +155,7 @@ For Query 2-
 .003631
 .004202
 Average = 0.004638
+Std. Deviation = 0.000715
  
 For Query 3-
 .001117
@@ -151,6 +166,7 @@ For Query 3-
 .001136
 .001101
 Average = 0.001107
+Std. Deviation = 0.000015
  
 For Query 4-
 .002505
@@ -161,6 +177,7 @@ For Query 4-
 .002102
 .003360
 Average = 0.002656
+Std. Deviation = 0.000591
  
 5 : ../../data/A-1000.csv, ../../data/B-1000-10-0.csv
 For Query 1-
@@ -172,6 +189,7 @@ For Query 1-
 .000218
 .000215
 Average = 0.000317
+Std. Deviation = 0.000168
  
 For Query 2-
 .009289
@@ -182,6 +200,7 @@ For Query 2-
 .008382
 .009959
 Average = 0.009149
+Std. Deviation = 0.000828
  
 For Query 3-
 .002248
@@ -192,6 +211,7 @@ For Query 3-
 .002118
 .003129
 Average = 0.002696
+Std. Deviation = 0.000588
  
 For Query 4-
 .008642
@@ -202,6 +222,7 @@ For Query 4-
 .005220
 .005382
 Average = 0.006360
+Std. Deviation = 0.001468
  
 6 : ../../data/A-1000.csv, ../../data/B-1000-50-0.csv
 For Query 1-
@@ -213,6 +234,7 @@ For Query 1-
 .000212
 .000235
 Average = 0.000402
+Std. Deviation = 0.000208
  
 For Query 2-
 .037440
@@ -223,6 +245,7 @@ For Query 2-
 .024804
 .019932
 Average = 0.028183
+Std. Deviation = 0.007991
  
 For Query 3-
 .004947
@@ -233,6 +256,7 @@ For Query 3-
 .006340
 .006214
 Average = 0.005808
+Std. Deviation = 0.000546
  
 For Query 4-
 .017295
@@ -243,6 +267,7 @@ For Query 4-
 .017515
 .026096
 Average = 0.019210
+Std. Deviation = 0.004343
  
 7 : ../../data/A-10000.csv, ../../data/B-10000-5-3.csv
 For Query 1-
@@ -254,6 +279,7 @@ For Query 1-
 .000257
 .000255
 Average = 0.000406
+Std. Deviation = 0.000182
  
 For Query 2-
 .051661
@@ -264,6 +290,7 @@ For Query 2-
 .052977
 .043628
 Average = 0.049868
+Std. Deviation = 0.010450
  
 For Query 3-
 .030575
@@ -274,6 +301,7 @@ For Query 3-
 .012091
 .019448
 Average = 0.018432
+Std. Deviation = 0.006218
  
 For Query 4-
 .038852
@@ -284,6 +312,7 @@ For Query 4-
 .030030
 .031018
 Average = 0.032919
+Std. Deviation = 0.003233
  
 8 : ../../data/A-10000.csv, ../../data/B-10000-50-0.csv
 For Query 1-
@@ -295,6 +324,7 @@ For Query 1-
 .000622
 .000659
 Average = 0.000682
+Std. Deviation = 0.000110
  
 For Query 2-
 .279296
@@ -305,6 +335,7 @@ For Query 2-
 .257222
 .275445
 Average = 0.274904
+Std. Deviation = 0.014615
  
 For Query 3-
 .065148
@@ -315,6 +346,7 @@ For Query 3-
 .065208
 .073037
 Average = 0.067949
+Std. Deviation = 0.003383
  
 For Query 4-
 .149880
@@ -325,6 +357,7 @@ For Query 4-
 .183938
 .167973
 Average = 0.196930
+Std. Deviation = 0.030181
  
 9 : ../../data/A-10000.csv, ../../data/B-10000-500-1.csv
 For Query 1-
@@ -336,6 +369,7 @@ For Query 1-
 .000416
 .000246
 Average = 0.000441
+Std. Deviation = 0.000139
  
 For Query 2-
 3.814318
@@ -346,6 +380,7 @@ For Query 2-
 2.861781
 2.828299
 Average = 3.453333
+Std. Deviation = 0.609313
  
 For Query 3-
 .702476
@@ -356,6 +391,7 @@ For Query 3-
 .699319
 .656944
 Average = 0.718145
+Std. Deviation = 0.055709
  
 For Query 4-
 1.521767
@@ -366,3 +402,5 @@ For Query 4-
 1.580140
 1.549754
 Average = 1.543881
+Std. Deviation = 0.105151
+ 

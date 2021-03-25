@@ -1,7 +1,8 @@
 import sys
-from statistics import dev
+import numpy as np
 
 # populating sqlite3
+print("For Sqlite3")
 sqlite3 = []
 with open('./Sqlite3/time_stats.txt', 'r') as f:
     data = f.readlines()
@@ -15,12 +16,18 @@ for i in range(9):
         print(data[data_ptr][:-1])
         data_ptr += 1
         sum = 0
+        temp = []
         for x in range(7):
             print(data[data_ptr][:-1])
             sum += float(data[data_ptr][:-1])
+            temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
-        quers.append(sum/7.0)
-        print(f'Average = {sum/7.0:.6f}')
+        arr = np.array(temp)
+        avg = np.mean(arr)
+        std = np.std(arr)
+        quers.append([avg, std])
+        print(f'Average = {quers[-1][0]:.6f}')
+        print(f'Std. Deviation = {quers[-1][1]:.6f}')
         print(" ")
         data_ptr += 1
     sqlite3.append(quers)
