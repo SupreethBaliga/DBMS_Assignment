@@ -1,0 +1,43 @@
+NOTE: Comments are denoted by '#'
+
+sqlite3>
+# run inside sqlite3 shell
+#setting up
+.mode csv
+.headers on
+.timer on
+
+#populating the tables
+drop table if exists A;
+create table A(
+    A1 integer primary key,
+    A2 text
+);
+.import ../../data/A-100.csv A  #change the path according to 
+                                # where data is stored
+
+drop table if exists B;
+create table B(
+    B1 integer primary key,
+    B2 integer,
+    B3 text,
+    foreign key (B2) references A(A1)
+);
+.import ../../data/B-100-3-4.csv B  # change the path according to 
+                                    # where data is stored
+
+# For query 1
+SELECT * FROM A WHERE A1 <= 50; 
+
+# For query 2
+SELECT * FROM B ORDER BY B3 ASC;
+
+# For query 3
+SELECT AVG(vals) FROM
+(SELECT B2, COUNT(B1) AS vals FROM B
+GROUP BY B2);
+
+# For query 4
+SELECT B1, B2, B3, A2 FROM
+(B INNER JOIN A ON B.B2 = A.A1);
+

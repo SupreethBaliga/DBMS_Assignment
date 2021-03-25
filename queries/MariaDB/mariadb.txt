@@ -1,0 +1,53 @@
+NOTE: Comments are denoted by '#'
+
+mariadb>
+# do these under the mariadb console
+# For setting the time:
+set profiling=1;
+set profiling_history_size=1;
+
+#setting up:
+CREATE DATABASE IF NOT EXISTS test;
+USE test;
+drop table if exists B;
+drop table if exists A;
+
+#populating the database:
+create table A(
+    A1 integer,
+    A2 text
+);
+LOAD DATA LOCAL INFILE '../../data/A-100.csv' #change the path accordingly
+INTO TABLE A
+FIELDS TERMINATED BY ','
+IGNORE 1 LINES;
+
+create table B(
+    B1 integer ,
+    B2 integer,
+    B3 text
+);
+LOAD DATA LOCAL INFILE '../../data/B-100-3-4.csv' #change the path accordingly
+INTO TABLE B
+FIELDS TERMINATED BY ','
+IGNORE 1 LINES;
+
+#<For query 1:>
+SELECT * FROM A WHERE A1 <= 50; 
+
+#<For query 2:>
+SELECT * FROM B ORDER BY BINARY B3 ASC;
+
+#<For query 3:>
+SELECT AVG(vals) FROM
+(SELECT B2, COUNT(B1) AS vals FROM B
+GROUP BY B2) AS K;
+
+#<For query 4:>
+SELECT B1, B2, B3, A2 FROM (B INNER JOIN A ON B.B2 = A.A1);
+
+#for seeing the time
+show profiles;
+
+# For clearing cache:
+reset query cache;

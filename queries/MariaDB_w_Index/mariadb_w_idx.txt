@@ -1,0 +1,61 @@
+NOTE: Comments are denoted by '#'
+
+mariadb>
+# do these under the mariadb console
+# For setting the time:
+set profiling=1;
+set profiling_history_size=1;
+
+#setting up:
+CREATE DATABASE IF NOT EXISTS test;
+USE test;
+drop table if exists B;
+drop table if exists A;
+
+#populating the database:
+create table A(
+    A1 integer primary key,
+    A2 varchar(32000)
+);
+LOAD DATA LOCAL INFILE '../../data/A-100.csv'
+INTO TABLE A
+FIELDS TERMINATED BY ','
+IGNORE 1 LINES;
+# index on A1 already exists since it is the primary key
+CREATE INDEX IF NOT EXISTS A_idx_1 on A(A2(32000));
+
+create table B(
+    B1 integer primary key,
+    B2 integer,
+    B3 varchar(32000),
+    foreign key (B2) references A(A1) ON DELETE CASCADE
+);
+LOAD DATA LOCAL INFILE '../../data/B-100-3-4.csv'
+INTO TABLE B
+FIELDS TERMINATED BY ','
+IGNORE 1 LINES;
+# index on B1 already exists since it is the primary key
+CREATE INDEX IF NOT EXISTS B_idx_1 on B(B2);
+CREATE INDEX IF NOT EXISTS B_idx_2 on B(B3(32000));
+
+#<For query 1:>
+SELECT * FROM A WHERE A1 <= 50; 
+
+#<For query 2:>
+SELECT * FROM B USE INDEX(B_idx_2) ORDER BY BINARY B3 ASC;
+
+#<For query 3:>
+SELECT AVG(vals) FROM
+(SELECT B2, COUNT(B1) AS vals FROM B USE INDEX(B_idx_1)
+GROUP BY B2) AS K;
+
+#<For query 4:>
+SELECT B1, B2, B3, A2 FROM
+(B USE INDEX(B_idx_1,B_idx_2) 
+INNER JOIN A USE INDEX(A_idx_1) ON B.B2 = A.A1);
+
+#for seeing the time
+show profiles;
+
+# For clearing cache:
+reset query cache;

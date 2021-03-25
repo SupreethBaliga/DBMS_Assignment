@@ -1,0 +1,11 @@
+a = 8, b = 0 , c =1
+a x a = 4   B-100-3-4.csv
+a x b = 0   B-100-5-0.csv
+a x c = 3   B-100-10-3.csv
+b x a = 0   B-1000-5-0.csv
+b x b = 0   B-1000-10-0.csv
+b x c = 0   B-1000-50-0.csv
+c x a = 3   B-10000-5-3.csv
+c x b = 0   B-10000-50-0.csv
+c x c = 1   B-10000-500-1.csv
+
