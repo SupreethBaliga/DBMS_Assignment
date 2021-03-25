@@ -8,8 +8,9 @@ For Query 1-
 .000206
 .000599
 .000623
-Average = 0.000599
-Std. Deviation = 0.000181
+After removing the max and min (Outliers):
+Average = 0.000629
+Std. Deviation = 0.000045
  
 For Query 2-
 .001341
@@ -19,8 +20,9 @@ For Query 2-
 .000848
 .000644
 .000667
-Average = 0.001051
-Std. Deviation = 0.000294
+After removing the max and min (Outliers):
+Average = 0.001074
+Std. Deviation = 0.000265
  
 For Query 3-
 .000508
@@ -30,8 +32,9 @@ For Query 3-
 .000621
 .000482
 .000561
-Average = 0.000509
-Std. Deviation = 0.000058
+After removing the max and min (Outliers):
+Average = 0.000499
+Std. Deviation = 0.000034
  
 For Query 4-
 .000581
@@ -41,8 +44,9 @@ For Query 4-
 .000633
 .000703
 .000785
-Average = 0.000642
-Std. Deviation = 0.000070
+After removing the max and min (Outliers):
+Average = 0.000626
+Std. Deviation = 0.000042
  
 2 : ../../data/A-100.csv, ../../data/B-100-5-0.csv
 For Query 1-
@@ -53,8 +57,9 @@ For Query 1-
 .000235
 .000234
 .000280
-Average = 0.000247
-Std. Deviation = 0.000030
+After removing the max and min (Outliers):
+Average = 0.000242
+Std. Deviation = 0.000019
  
 For Query 2-
 .000650
@@ -64,8 +69,9 @@ For Query 2-
 .000640
 .000569
 .000521
-Average = 0.000608
-Std. Deviation = 0.000068
+After removing the max and min (Outliers):
+Average = 0.000600
+Std. Deviation = 0.000038
  
 For Query 3-
 .000319
@@ -75,8 +81,9 @@ For Query 3-
 .000290
 .000292
 .000288
-Average = 0.000304
-Std. Deviation = 0.000019
+After removing the max and min (Outliers):
+Average = 0.000301
+Std. Deviation = 0.000014
  
 For Query 4-
 .000565
@@ -86,8 +93,9 @@ For Query 4-
 .000417
 .000449
 .000410
-Average = 0.000463
-Std. Deviation = 0.000054
+After removing the max and min (Outliers):
+Average = 0.000453
+Std. Deviation = 0.000037
  
 3 : ../../data/A-100.csv, ../../data/B-100-10-3.csv
 For Query 1-
@@ -98,8 +106,9 @@ For Query 1-
 .000216
 .000258
 .000207
-Average = 0.000432
-Std. Deviation = 0.000254
+After removing the max and min (Outliers):
+Average = 0.000387
+Std. Deviation = 0.000193
  
 For Query 2-
 .001047
@@ -109,8 +118,9 @@ For Query 2-
 .001056
 .000936
 .000874
-Average = 0.000910
-Std. Deviation = 0.000099
+After removing the max and min (Outliers):
+Average = 0.000904
+Std. Deviation = 0.000082
  
 For Query 3-
 .000381
@@ -120,8 +130,9 @@ For Query 3-
 .000402
 .000375
 .000398
-Average = 0.000411
-Std. Deviation = 0.000055
+After removing the max and min (Outliers):
+Average = 0.000391
+Std. Deviation = 0.000010
  
 For Query 4-
 .000651
@@ -131,8 +142,9 @@ For Query 4-
 .000766
 .000676
 .000641
-Average = 0.000701
-Std. Deviation = 0.000088
+After removing the max and min (Outliers):
+Average = 0.000676
+Std. Deviation = 0.000047
  
 4 : ../../data/A-1000.csv, ../../data/B-1000-5-0.csv
 For Query 1-
@@ -143,8 +155,9 @@ For Query 1-
 .000229
 .000315
 .000305
-Average = 0.000455
-Std. Deviation = 0.000223
+After removing the max and min (Outliers):
+Average = 0.000415
+Std. Deviation = 0.000149
  
 For Query 2-
 .004411
@@ -154,8 +167,9 @@ For Query 2-
 .004346
 .003631
 .004202
-Average = 0.004638
-Std. Deviation = 0.000715
+After removing the max and min (Outliers):
+Average = 0.004569
+Std. Deviation = 0.000379
  
 For Query 3-
 .001117
@@ -165,8 +179,9 @@ For Query 3-
 .001102
 .001136
 .001101
-Average = 0.001107
-Std. Deviation = 0.000015
+After removing the max and min (Outliers):
+Average = 0.001106
+Std. Deviation = 0.000006
  
 For Query 4-
 .002505
@@ -176,8 +191,9 @@ For Query 4-
 .002084
 .002102
 .003360
-Average = 0.002656
-Std. Deviation = 0.000591
+After removing the max and min (Outliers):
+Average = 0.002555
+Std. Deviation = 0.000426
  
 5 : ../../data/A-1000.csv, ../../data/B-1000-10-0.csv
 For Query 1-
@@ -188,8 +204,9 @@ For Query 1-
 .000214
 .000218
 .000215
-Average = 0.000317
-Std. Deviation = 0.000168
+After removing the max and min (Outliers):
+Average = 0.000258
+Std. Deviation = 0.000052
  
 For Query 2-
 .009289
@@ -199,8 +216,9 @@ For Query 2-
 .008790
 .008382
 .009959
-Average = 0.009149
-Std. Deviation = 0.000828
+After removing the max and min (Outliers):
+Average = 0.009133
+Std. Deviation = 0.000529
  
 For Query 3-
 .002248
@@ -210,8 +228,9 @@ For Query 3-
 .002223
 .002118
 .003129
-Average = 0.002696
-Std. Deviation = 0.000588
+After removing the max and min (Outliers):
+Average = 0.002584
+Std. Deviation = 0.000381
  
 For Query 4-
 .008642
@@ -221,8 +240,9 @@ For Query 4-
 .005377
 .005220
 .005382
-Average = 0.006360
-Std. Deviation = 0.001468
+After removing the max and min (Outliers):
+Average = 0.006140
+Std. Deviation = 0.001283
  
 6 : ../../data/A-1000.csv, ../../data/B-1000-50-0.csv
 For Query 1-
@@ -233,8 +253,9 @@ For Query 1-
 .000221
 .000212
 .000235
-Average = 0.000402
-Std. Deviation = 0.000208
+After removing the max and min (Outliers):
+Average = 0.000390
+Std. Deviation = 0.000203
  
 For Query 2-
 .037440
@@ -244,8 +265,9 @@ For Query 2-
 .019715
 .024804
 .019932
-Average = 0.028183
-Std. Deviation = 0.007991
+After removing the max and min (Outliers):
+Average = 0.027107
+Std. Deviation = 0.005961
  
 For Query 3-
 .004947
@@ -255,8 +277,9 @@ For Query 3-
 .006210
 .006340
 .006214
-Average = 0.005808
-Std. Deviation = 0.000546
+After removing the max and min (Outliers):
+Average = 0.005874
+Std. Deviation = 0.000456
  
 For Query 4-
 .017295
@@ -266,8 +289,9 @@ For Query 4-
 .015831
 .017515
 .026096
-Average = 0.019210
-Std. Deviation = 0.004343
+After removing the max and min (Outliers):
+Average = 0.018565
+Std. Deviation = 0.003718
  
 7 : ../../data/A-10000.csv, ../../data/B-10000-5-3.csv
 For Query 1-
@@ -278,8 +302,9 @@ For Query 1-
 .000207
 .000257
 .000255
-Average = 0.000406
-Std. Deviation = 0.000182
+After removing the max and min (Outliers):
+Average = 0.000397
+Std. Deviation = 0.000161
  
 For Query 2-
 .051661
@@ -289,8 +314,9 @@ For Query 2-
 .051397
 .052977
 .043628
-Average = 0.049868
-Std. Deviation = 0.010450
+After removing the max and min (Outliers):
+Average = 0.048162
+Std. Deviation = 0.004810
  
 For Query 3-
 .030575
@@ -300,8 +326,9 @@ For Query 3-
 .022996
 .012091
 .019448
-Average = 0.018432
-Std. Deviation = 0.006218
+After removing the max and min (Outliers):
+Average = 0.017272
+Std. Deviation = 0.003906
  
 For Query 4-
 .038852
@@ -311,8 +338,9 @@ For Query 4-
 .033647
 .030030
 .031018
-Average = 0.032919
-Std. Deviation = 0.003233
+After removing the max and min (Outliers):
+Average = 0.032616
+Std. Deviation = 0.001897
  
 8 : ../../data/A-10000.csv, ../../data/B-10000-50-0.csv
 For Query 1-
@@ -323,8 +351,9 @@ For Query 1-
 .000948
 .000622
 .000659
-Average = 0.000682
-Std. Deviation = 0.000110
+After removing the max and min (Outliers):
+Average = 0.000642
+Std. Deviation = 0.000016
  
 For Query 2-
 .279296
@@ -334,8 +363,9 @@ For Query 2-
 .261808
 .257222
 .275445
-Average = 0.274904
-Std. Deviation = 0.014615
+After removing the max and min (Outliers):
+Average = 0.272296
+Std. Deviation = 0.006396
  
 For Query 3-
 .065148
@@ -345,8 +375,9 @@ For Query 3-
 .067661
 .065208
 .073037
-Average = 0.067949
-Std. Deviation = 0.003383
+After removing the max and min (Outliers):
+Average = 0.067814
+Std. Deviation = 0.002633
  
 For Query 4-
 .149880
@@ -356,8 +387,9 @@ For Query 4-
 .194720
 .183938
 .167973
-Average = 0.196930
-Std. Deviation = 0.030181
+After removing the max and min (Outliers):
+Average = 0.197352
+Std. Deviation = 0.020698
  
 9 : ../../data/A-10000.csv, ../../data/B-10000-500-1.csv
 For Query 1-
@@ -368,8 +400,9 @@ For Query 1-
 .000342
 .000416
 .000246
+After removing the max and min (Outliers):
 Average = 0.000441
-Std. Deviation = 0.000139
+Std. Deviation = 0.000107
  
 For Query 2-
 3.814318
@@ -379,8 +412,9 @@ For Query 2-
 3.136373
 2.861781
 2.828299
-Average = 3.453333
-Std. Deviation = 0.609313
+After removing the max and min (Outliers):
+Average = 3.387400
+Std. Deviation = 0.504971
  
 For Query 3-
 .702476
@@ -390,8 +424,9 @@ For Query 3-
 .648494
 .699319
 .656944
-Average = 0.718145
-Std. Deviation = 0.055709
+After removing the max and min (Outliers):
+Average = 0.712279
+Std. Deviation = 0.037158
  
 For Query 4-
 1.521767
@@ -401,6 +436,7 @@ For Query 4-
 1.537225
 1.580140
 1.549754
-Average = 1.543881
-Std. Deviation = 0.105151
+After removing the max and min (Outliers):
+Average = 1.541680
+Std. Deviation = 0.022145
  

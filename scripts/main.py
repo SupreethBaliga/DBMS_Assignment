@@ -2,7 +2,7 @@ import sys
 import numpy as np
 
 # populating sqlite3
-print("For Sqlite3")
+print("######################## For Sqlite3 ################################")
 sqlite3 = []
 with open('./Sqlite3/time_stats.txt', 'r') as f:
     data = f.readlines()
@@ -15,17 +15,17 @@ for i in range(9):
     for k in range(4):
         print(data[data_ptr][:-1])
         data_ptr += 1
-        sum = 0
         temp = []
         for x in range(7):
             print(data[data_ptr][:-1])
-            sum += float(data[data_ptr][:-1])
             temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
-        arr = np.array(temp)
+        temp.sort()
+        arr = np.array(temp[1:-1])
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
+        print(f'After removing the max and min (Outliers):')
         print(f'Average = {quers[-1][0]:.6f}')
         print(f'Std. Deviation = {quers[-1][1]:.6f}')
         print(" ")
@@ -34,7 +34,7 @@ for i in range(9):
 f.close()
 
 # populating MariaDB w/o index
-print("For MariaDB without index")
+print("###################### For MariaDB without index ###################")
 maria = []
 with open('./MariaDB/time_stats.txt', 'r') as f:
     data = f.readlines()
@@ -47,17 +47,17 @@ for i in range(9):
     for k in range(4):
         print(data[data_ptr][:-1])
         data_ptr += 1
-        sum = 0
         temp = []
         for x in range(7):
             print(data[data_ptr][:-1])
-            sum += float(data[data_ptr][:-1])
             temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
-        arr = np.array(temp)
+        temp.sort()
+        arr = np.array(temp[1:-1])
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
+        print(f'After removing the max and min (Outliers):')
         print(f'Average = {quers[-1][0]:.6f}')
         print(f'Std. Deviation = {quers[-1][1]:.6f}')
         print(" ")
@@ -66,7 +66,7 @@ for i in range(9):
 f.close()
 
 # populating MariaDB with index
-print("For MariaDB with index")
+print("####################### For MariaDB with index######################")
 mariaidx = []
 with open('./MariaDbIndex/time_stats.txt', 'r') as f:
     data = f.readlines()
@@ -79,17 +79,17 @@ for i in range(9):
     for k in range(4):
         print(data[data_ptr][:-1])
         data_ptr += 1
-        sum = 0
         temp = []
         for x in range(7):
             print(data[data_ptr][:-1])
-            sum += float(data[data_ptr][:-1])
             temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
-        arr = np.array(temp)
+        temp.sort()
+        arr = np.array(temp[1:-1])
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
+        print(f'After removing the max and min (Outliers):')
         print(f'Average = {quers[-1][0]:.6f}')
         print(f'Std. Deviation = {quers[-1][1]:.6f}')
         print(" ")
@@ -98,7 +98,7 @@ for i in range(9):
 f.close()
 
 # populating MongoDb
-print("For MongoDb")
+print("################################For MongoDb################################")
 mongo = []
 with open('./MongoDB/time_stats.txt', 'r') as f:
     data = f.readlines()
@@ -111,17 +111,17 @@ for i in range(9):
     for k in range(4):
         print(data[data_ptr][:-1])
         data_ptr += 1
-        sum = 0
         temp = []
         for x in range(7):
             print(data[data_ptr][:-1])
-            sum += float(data[data_ptr][:-1])
             temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
-        arr = np.array(temp)
+        temp.sort()
+        arr = np.array(temp[1:-1])
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
+        print(f'After removing the max and min (Outliers):')
         print(f'Average = {quers[-1][0]:.6f}')
         print(f'Std. Deviation = {quers[-1][1]:.6f}')
         print(" ")
