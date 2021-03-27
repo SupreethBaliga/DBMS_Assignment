@@ -64,7 +64,7 @@ do
     for j in {0..6}
     do
         mongo test --eval '
-            db.setProfilingLevel(2, {filter:{op:"query"}})
+            db.setProfilingLevel(2)
             pointer = db.B.aggregate([{$sort: {B3 : 1} },{$project: {_id: false, B1: true, B2: true, B3: true}}],{ "allowDiskUse" : true })
             while(pointer.hasNext()) {printjson(pointer.next());}
             db.system.profile.find({}, {millis: 1}).limit(1).sort({ts: -1})
@@ -84,7 +84,7 @@ do
     for j in {0..6}
     do
         mongo test --eval '
-            db.setProfilingLevel(2, {filter:{op:"query"}})
+            db.setProfilingLevel(2)
             pointer = db.B.aggregate([{$group: {_id: "$B2", total: {$sum: 1}}},{$group: {_id: null, answer: {$avg: "$total"}}},{$project: {_id: false,answer: true}}]);
             while(pointer.hasNext()) {printjson(pointer.next());}
             db.system.profile.find({}, {millis: 1}).limit(1).sort({ts: -1})
@@ -104,7 +104,7 @@ do
     for j in {0..6}
     do
         mongo test --eval '
-            db.setProfilingLevel(2, {filter:{op:"query"}})
+            db.setProfilingLevel(2)
             pointer = db.B.aggregate([{$lookup: {from: "A",localField: "B2",foreignField: "A1",as: "temp"}},{$match: {"temp": {$ne: []}}},{$project:{_id: false,B1: true,B2: true,B3: true,A2: {$arrayElemAt: ["$temp.A2", 0]},}}]);
             while(pointer.hasNext()) {printjson(pointer.next());}
             db.system.profile.find({}, {millis: 1}).limit(1).sort({ts: -1})

@@ -1,4 +1,4 @@
-For Sqlite3
+######################## For Sqlite3 ################################
 1 : ../../data/A-100.csv, ../../data/B-100-3-4.csv
 For Query 1-
 .000600
@@ -439,4 +439,1330 @@ For Query 4-
 After removing the max and min (Outliers):
 Average = 1.541680
 Std. Deviation = 0.022145
+ 
+###################### For MariaDB without index ###################
+1 : ../../data/A-100.csv, ../../data/B-100-3-4.csv
+Query 1-
+0.00071165
+0.00072815
+0.00034595
+0.00041975
+0.00035522
+0.00034747
+0.00035319
+After removing the max and min (Outliers):
+Average = 0.000437
+Std. Deviation = 0.000140
+ 
+Query 2-
+0.00162481
+0.00141513
+0.00158986
+0.00124986
+0.00103502
+0.00090530
+0.00094786
+After removing the max and min (Outliers):
+Average = 0.001248
+Std. Deviation = 0.000237
+ 
+Query 3-
+0.00051745
+0.00050079
+0.00055341
+0.00090806
+0.00058188
+0.00058014
+0.00051398
+After removing the max and min (Outliers):
+Average = 0.000549
+Std. Deviation = 0.000029
+ 
+Query 4-
+0.00231594
+0.00245033
+0.00216123
+0.00243527
+0.00205185
+0.00280245
+0.00212170
+After removing the max and min (Outliers):
+Average = 0.002297
+Std. Deviation = 0.000136
+ 
+2 : ../../data/A-100.csv, ../../data/B-100-5-0.csv
+Query 1-
+0.00068083
+0.00066434
+0.00035138
+0.00026805
+0.00023307
+0.00027462
+0.00022610
+After removing the max and min (Outliers):
+Average = 0.000358
+Std. Deviation = 0.000158
+ 
+Query 2-
+0.00114754
+0.00114677
+0.00104953
+0.00105692
+0.00108679
+0.00104921
+0.00103580
+After removing the max and min (Outliers):
+Average = 0.001078
+Std. Deviation = 0.000037
+ 
+Query 3-
+0.00093954
+0.00079328
+0.00055172
+0.00058182
+0.00057504
+0.00054643
+0.00061360
+After removing the max and min (Outliers):
+Average = 0.000623
+Std. Deviation = 0.000087
+ 
+Query 4-
+0.00301217
+0.00320106
+0.00349206
+0.00274237
+0.00303165
+0.00294460
+0.00325391
+After removing the max and min (Outliers):
+Average = 0.003089
+Std. Deviation = 0.000118
+ 
+3 : ../../data/A-100.csv, ../../data/B-100-10-3.csv
+Query 1-
+0.00071262
+0.00025365
+0.00020557
+0.00034515
+0.00023157
+0.00072749
+0.00066742
+After removing the max and min (Outliers):
+Average = 0.000442
+Std. Deviation = 0.000206
+ 
+Query 2-
+0.00337407
+0.00183706
+0.00186912
+0.00366686
+0.00172783
+0.00174669
+0.00169404
+After removing the max and min (Outliers):
+Average = 0.002111
+Std. Deviation = 0.000634
+ 
+Query 3-
+0.00074585
+0.00068243
+0.00068833
+0.00068398
+0.00069276
+0.00067785
+0.00068802
+After removing the max and min (Outliers):
+Average = 0.000687
+Std. Deviation = 0.000004
+ 
+Query 4-
+0.00504270
+0.00465154
+0.00457191
+0.00458337
+0.00463097
+0.00504127
+0.00501789
+After removing the max and min (Outliers):
+Average = 0.004785
+Std. Deviation = 0.000201
+ 
+4 : ../../data/A-1000.csv, ../../data/B-1000-5-0.csv
+Query 1-
+0.00194344
+0.00099272
+0.00084376
+0.00076301
+0.00127478
+0.00075780
+0.00068383
+After removing the max and min (Outliers):
+Average = 0.000926
+Std. Deviation = 0.000194
+ 
+Query 2-
+0.01261131
+0.01180121
+0.01016172
+0.00966222
+0.00965207
+0.00974098
+0.00951397
+After removing the max and min (Outliers):
+Average = 0.010204
+Std. Deviation = 0.000820
+ 
+Query 3-
+0.00312458
+0.00218553
+0.00221011
+0.00221793
+0.00249720
+0.00332751
+0.00404897
+After removing the max and min (Outliers):
+Average = 0.002675
+Std. Deviation = 0.000466
+ 
+Query 4-
+0.22638510
+0.14769888
+0.20707188
+0.21163699
+0.15307894
+0.17400617
+0.17804733
+After removing the max and min (Outliers):
+Average = 0.184768
+Std. Deviation = 0.021838
+ 
+5 : ../../data/A-1000.csv, ../../data/B-1000-10-0.csv
+Query 1-
+0.00198220
+0.00189682
+0.00099427
+0.00109745
+0.00071383
+0.00062883
+0.00064305
+After removing the max and min (Outliers):
+Average = 0.001069
+Std. Deviation = 0.000447
+ 
+Query 2-
+0.01921310
+0.01716658
+0.01781658
+0.01885082
+0.01702100
+0.01613102
+0.01680670
+After removing the max and min (Outliers):
+Average = 0.017532
+Std. Deviation = 0.000740
+ 
+Query 3-
+0.00332322
+0.00414911
+0.00544493
+0.00552219
+0.00556050
+0.00345720
+0.00339835
+After removing the max and min (Outliers):
+Average = 0.004394
+Std. Deviation = 0.000928
+ 
+Query 4-
+0.31190453
+0.26445694
+0.31244544
+0.34346856
+0.26910258
+0.29229337
+0.25477270
+After removing the max and min (Outliers):
+Average = 0.290041
+Std. Deviation = 0.020386
+ 
+6 : ../../data/A-1000.csv, ../../data/B-1000-50-0.csv
+Query 1-
+0.00129184
+0.00136327
+0.00095618
+0.00065767
+0.00123977
+0.00067291
+0.00067179
+After removing the max and min (Outliers):
+Average = 0.000966
+Std. Deviation = 0.000266
+ 
+Query 2-
+0.15151201
+0.13606051
+0.09593072
+0.12484233
+0.12347232
+0.12331605
+0.13630851
+After removing the max and min (Outliers):
+Average = 0.128800
+Std. Deviation = 0.006053
+ 
+Query 3-
+0.03573075
+0.03632449
+0.01190707
+0.01130163
+0.01038209
+0.01037846
+0.01020339
+After removing the max and min (Outliers):
+Average = 0.015940
+Std. Deviation = 0.009912
+ 
+Query 4-
+1.19270320
+1.17526872
+1.85485675
+1.15315459
+1.28967672
+1.11561704
+1.12767574
+After removing the max and min (Outliers):
+Average = 1.187696
+Std. Deviation = 0.055453
+ 
+7 : ../../data/A-10000.csv, ../../data/B-10000-5-3.csv
+Query 1-
+0.01839182
+0.01347121
+0.00963276
+0.01056275
+0.00616949
+0.00406737
+0.00571731
+After removing the max and min (Outliers):
+Average = 0.009111
+Std. Deviation = 0.002883
+ 
+Query 2-
+0.16221667
+0.13853004
+0.91426541
+0.15503053
+0.15621064
+0.40674622
+0.16336965
+After removing the max and min (Outliers):
+Average = 0.208715
+Std. Deviation = 0.099069
+ 
+Query 3-
+0.05017904
+0.04547354
+0.02496492
+0.05059844
+0.02515331
+0.02343295
+0.02097983
+After removing the max and min (Outliers):
+Average = 0.033841
+Std. Deviation = 0.011531
+ 
+Query 4-
+15.60390465
+14.67795125
+16.39500254
+16.37590249
+16.28186849
+16.21040884
+16.89331991
+After removing the max and min (Outliers):
+Average = 16.173417
+Std. Deviation = 0.292429
+ 
+8 : ../../data/A-10000.csv, ../../data/B-10000-50-0.csv
+Query 1-
+0.01460400
+0.01507413
+0.00426888
+0.00456321
+0.00462627
+0.00418930
+0.00437015
+After removing the max and min (Outliers):
+Average = 0.006487
+Std. Deviation = 0.004061
+ 
+Query 2-
+5.26520001
+4.82783686
+3.76705439
+5.37521937
+3.46964224
+5.34163854
+3.97080060
+After removing the max and min (Outliers):
+Average = 4.634506
+Std. Deviation = 0.652406
+ 
+Query 3-
+0.12737261
+0.10381910
+0.12642384
+0.10513092
+0.09718315
+0.09836976
+0.09555697
+After removing the max and min (Outliers):
+Average = 0.106185
+Std. Deviation = 0.010568
+ 
+Query 4-
+117.90617518
+122.52049105
+119.78748059
+113.21158440
+112.72977104
+112.56891904
+112.94652211
+After removing the max and min (Outliers):
+Average = 115.316307
+Std. Deviation = 2.947362
+ 
+9 : ../../data/A-10000.csv, ../../data/B-10000-500-1.csv
+Query 1-
+0.01991797
+1.17321431
+0.01459320
+0.01455679
+0.01432676
+0.01784685
+0.01438910
+After removing the max and min (Outliers):
+Average = 0.016261
+Std. Deviation = 0.002240
+ 
+Query 2-
+730.36911752
+626.87902426
+622.31699510
+642.12913258
+810.28596903
+371.65075849
+318.03226945
+After removing the max and min (Outliers):
+Average = 598.669006
+Std. Deviation = 120.104970
+ 
+Query 3-
+1.30713733
+1.19332568
+1.20377653
+1.16682579
+1.12543915
+1.16085605
+1.22952024
+After removing the max and min (Outliers):
+Average = 1.190861
+Std. Deviation = 0.025082
+ 
+Query 4-
+1121.52733034
+1078.16274334
+1227.16887449
+2275.51892200
+1755.17328647
+1330.67442450
+1090.75223700
+After removing the max and min (Outliers):
+Average = 1305.059231
+Std. Deviation = 240.390164
+ 
+####################### For MariaDB with index######################
+1 : ../../data/A-100.csv, ../../data/B-100-3-4.csv
+Query 1-
+0.10790927
+0.00063676
+0.00033061
+0.00091044
+0.00046191
+0.00028473
+0.00072535
+After removing the max and min (Outliers):
+Average = 0.000613
+Std. Deviation = 0.000202
+ 
+Query 2-
+0.00182775
+0.00122857
+0.00123106
+0.00123756
+0.00122006
+0.00123746
+0.00123135
+After removing the max and min (Outliers):
+Average = 0.001233
+Std. Deviation = 0.000004
+ 
+Query 3-
+0.00055904
+0.00050702
+0.00049381
+0.00048455
+0.00049280
+0.00051047
+0.00049416
+After removing the max and min (Outliers):
+Average = 0.000500
+Std. Deviation = 0.000008
+ 
+Query 4-
+0.00111596
+0.00108142
+0.00104372
+0.00104416
+0.00106474
+0.00103666
+0.00103042
+After removing the max and min (Outliers):
+Average = 0.001054
+Std. Deviation = 0.000017
+ 
+2 : ../../data/A-100.csv, ../../data/B-100-5-0.csv
+Query 1-
+0.00065911
+0.00070879
+0.00095721
+0.00047123
+0.00069601
+0.00067896
+0.00064997
+After removing the max and min (Outliers):
+Average = 0.000679
+Std. Deviation = 0.000022
+ 
+Query 2-
+0.00134588
+0.00357067
+0.00311623
+0.00313249
+0.00308862
+0.00310124
+0.00325805
+After removing the max and min (Outliers):
+Average = 0.003139
+Std. Deviation = 0.000061
+ 
+Query 3-
+0.00107833
+0.00113042
+0.00109181
+0.00041613
+0.00034359
+0.00036375
+0.00035641
+After removing the max and min (Outliers):
+Average = 0.000661
+Std. Deviation = 0.000347
+ 
+Query 4-
+0.00087156
+0.00085426
+0.00084931
+0.00081166
+0.00081799
+0.00087167
+0.00083497
+After removing the max and min (Outliers):
+Average = 0.000846
+Std. Deviation = 0.000018
+ 
+3 : ../../data/A-100.csv, ../../data/B-100-10-3.csv
+Query 1-
+0.00024047
+0.00030785
+0.00043712
+0.00044760
+0.00045719
+0.00042832
+0.00044936
+After removing the max and min (Outliers):
+Average = 0.000414
+Std. Deviation = 0.000054
+ 
+Query 2-
+0.00356124
+0.00334268
+0.00332576
+0.00337151
+0.00333415
+0.00338165
+0.00338771
+After removing the max and min (Outliers):
+Average = 0.003364
+Std. Deviation = 0.000021
+ 
+Query 3-
+0.00114068
+0.00118752
+0.00106599
+0.00078955
+0.00048031
+0.00122375
+0.00126510
+After removing the max and min (Outliers):
+Average = 0.001081
+Std. Deviation = 0.000155
+ 
+Query 4-
+0.00388238
+0.00403386
+0.00338868
+0.00337719
+0.00335548
+0.00354795
+0.00361461
+After removing the max and min (Outliers):
+Average = 0.003562
+Std. Deviation = 0.000184
+ 
+4 : ../../data/A-1000.csv, ../../data/B-1000-5-0.csv
+Query 1-
+0.00067436
+0.00028395
+0.00029639
+0.00024050
+0.00027068
+0.00070712
+0.00074359
+After removing the max and min (Outliers):
+Average = 0.000447
+Std. Deviation = 0.000200
+ 
+Query 2-
+0.01485494
+0.03246130
+0.03005474
+0.03313674
+0.01371441
+0.02962548
+0.02816183
+After removing the max and min (Outliers):
+Average = 0.027032
+Std. Deviation = 0.006243
+ 
+Query 3-
+0.00369927
+0.00359629
+0.00353150
+0.00353042
+0.00368241
+0.00356690
+0.00468135
+After removing the max and min (Outliers):
+Average = 0.003615
+Std. Deviation = 0.000065
+ 
+Query 4-
+0.02042839
+0.01857088
+0.00923466
+0.00915914
+0.00979994
+0.00916720
+0.00920703
+After removing the max and min (Outliers):
+Average = 0.011196
+Std. Deviation = 0.003695
+ 
+5 : ../../data/A-1000.csv, ../../data/B-1000-10-0.csv
+Query 1-
+0.00065974
+0.00070186
+0.00065346
+0.00070060
+0.00076317
+0.00064620
+0.00073277
+After removing the max and min (Outliers):
+Average = 0.000690
+Std. Deviation = 0.000029
+ 
+Query 2-
+0.04260757
+0.01644976
+0.01668096
+0.01702370
+0.02056352
+0.01923036
+0.01774623
+After removing the max and min (Outliers):
+Average = 0.018249
+Std. Deviation = 0.001451
+ 
+Query 3-
+0.00508599
+0.00509716
+0.00503877
+0.00502726
+0.00509550
+0.00503986
+0.00509181
+After removing the max and min (Outliers):
+Average = 0.005070
+Std. Deviation = 0.000026
+ 
+Query 4-
+0.01660256
+0.01157950
+0.00822764
+0.00817586
+0.01603458
+0.02938035
+0.02765207
+After removing the max and min (Outliers):
+Average = 0.016019
+Std. Deviation = 0.006574
+ 
+6 : ../../data/A-1000.csv, ../../data/B-1000-50-0.csv
+Query 1-
+0.00024422
+0.00036973
+0.00049238
+0.00048987
+0.00047370
+0.00047608
+0.00047581
+After removing the max and min (Outliers):
+Average = 0.000457
+Std. Deviation = 0.000044
+ 
+Query 2-
+0.10218834
+0.10760075
+0.10350897
+0.09906390
+0.08282802
+0.09334213
+0.09454032
+After removing the max and min (Outliers):
+Average = 0.098529
+Std. Deviation = 0.004032
+ 
+Query 3-
+0.00652697
+0.01838459
+0.01669597
+0.01672357
+0.01673825
+0.01679780
+0.01675885
+After removing the max and min (Outliers):
+Average = 0.016743
+Std. Deviation = 0.000034
+ 
+Query 4-
+0.05870720
+0.05841689
+0.05838126
+0.05810206
+0.03004579
+0.05991077
+0.05686881
+After removing the max and min (Outliers):
+Average = 0.058095
+Std. Deviation = 0.000642
+ 
+7 : ../../data/A-10000.csv, ../../data/B-10000-5-3.csv
+Query 1-
+0.00068238
+0.00065676
+0.00047218
+0.00021949
+0.00022752
+0.00023478
+0.00023444
+After removing the max and min (Outliers):
+Average = 0.000365
+Std. Deviation = 0.000173
+ 
+Query 2-
+0.14209108
+0.13284722
+0.11748142
+0.14353080
+0.15725652
+0.16188922
+0.11816531
+After removing the max and min (Outliers):
+Average = 0.138778
+Std. Deviation = 0.012923
+ 
+Query 3-
+0.00753247
+0.00708493
+0.00698986
+0.00691745
+0.00659840
+0.00659285
+0.00656199
+After removing the max and min (Outliers):
+Average = 0.006837
+Std. Deviation = 0.000204
+ 
+Query 4-
+0.04760888
+0.08492573
+0.07474694
+0.07633715
+0.07979828
+0.07655619
+0.07938727
+After removing the max and min (Outliers):
+Average = 0.077365
+Std. Deviation = 0.001927
+ 
+8 : ../../data/A-10000.csv, ../../data/B-10000-50-0.csv
+Query 1-
+0.00072044
+0.00066072
+0.00065253
+0.00034787
+0.00034748
+0.00035425
+0.00034942
+After removing the max and min (Outliers):
+Average = 0.000473
+Std. Deviation = 0.000150
+ 
+Query 2-
+24.81920110
+9.64541977
+9.63467727
+13.39092785
+11.82290811
+11.85380852
+10.65919414
+After removing the max and min (Outliers):
+Average = 11.474452
+Std. Deviation = 1.260811
+ 
+Query 3-
+0.05824585
+0.04413075
+0.06555596
+0.03451346
+0.03442026
+0.03645089
+0.03557963
+After removing the max and min (Outliers):
+Average = 0.041784
+Std. Deviation = 0.008903
+ 
+Query 4-
+0.28619087
+0.31281818
+0.32017894
+0.28489222
+0.30281857
+0.27420205
+0.29082021
+After removing the max and min (Outliers):
+Average = 0.295508
+Std. Deviation = 0.010720
+ 
+9 : ../../data/A-10000.csv, ../../data/B-10000-500-1.csv
+Query 1-
+0.00117434
+0.00025088
+0.00065967
+0.00070312
+0.00073370
+0.00065368
+0.00067072
+After removing the max and min (Outliers):
+Average = 0.000684
+Std. Deviation = 0.000030
+ 
+Query 2-
+1958.46133019
+461.39923673
+561.98003040
+394.14681841
+358.42291742
+483.11690924
+426.57341214
+After removing the max and min (Outliers):
+Average = 465.443281
+Std. Deviation = 56.994926
+ 
+Query 3-
+9.03796998
+0.45477921
+0.53249889
+0.65069381
+0.36310292
+0.36780152
+0.40062672
+After removing the max and min (Outliers):
+Average = 0.481280
+Std. Deviation = 0.101399
+ 
+Query 4-
+8.32647697
+5.73120603
+5.73298258
+5.46508332
+5.46009867
+5.43253047
+5.37404032
+After removing the max and min (Outliers):
+Average = 5.564380
+Std. Deviation = 0.137387
+ 
+################################For MongoDb################################
+1 : ../../data/A-100.csv, ../../data/B-100-3-4.csv
+Query 1 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 2 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 3 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 4 -
+0.01
+0.01
+0.01
+0.011
+0.008
+0.009
+0.008
+After removing the max and min (Outliers):
+Average = 0.009400
+Std. Deviation = 0.000800
+ 
+2 : ../../data/A-100.csv, ../../data/B-100-5-0.csv
+Query 1 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 2 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 3 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 4 -
+0.015
+0.014
+0.014
+0.014
+0.015
+0.017
+0.015
+After removing the max and min (Outliers):
+Average = 0.014600
+Std. Deviation = 0.000490
+ 
+3 : ../../data/A-100.csv, ../../data/B-100-10-3.csv
+Query 1 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 2 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 3 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 4 -
+0.048
+0.043
+0.046
+0.033
+0.035
+0.043
+0.06
+After removing the max and min (Outliers):
+Average = 0.043000
+Std. Deviation = 0.004427
+ 
+4 : ../../data/A-1000.csv, ../../data/B-1000-5-0.csv
+Query 1 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.001
+0.001
+After removing the max and min (Outliers):
+Average = 0.000200
+Std. Deviation = 0.000400
+ 
+Query 2 -
+0.001
+0.001
+0.003
+0.001
+0.002
+0.002
+0.002
+After removing the max and min (Outliers):
+Average = 0.001600
+Std. Deviation = 0.000490
+ 
+Query 3 -
+0.006
+0.003
+0.011
+0.007
+0.005
+0.005
+0.004
+After removing the max and min (Outliers):
+Average = 0.005400
+Std. Deviation = 0.001020
+ 
+Query 4 -
+1.523
+1.321
+1.263
+1.302
+1.869
+1.165
+1.343
+After removing the max and min (Outliers):
+Average = 1.350400
+Std. Deviation = 0.090212
+ 
+5 : ../../data/A-1000.csv, ../../data/B-1000-10-0.csv
+Query 1 -
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 2 -
+0.002
+0.002
+0.001
+0.002
+0.002
+0.002
+0.002
+After removing the max and min (Outliers):
+Average = 0.002000
+Std. Deviation = 0.000000
+ 
+Query 3 -
+0.007
+0.01
+0.005
+0.005
+0.007
+0.007
+0.006
+After removing the max and min (Outliers):
+Average = 0.006400
+Std. Deviation = 0.000800
+ 
+Query 4 -
+2.589
+2.414
+2.556
+2.291
+2.244
+2.106
+2.312
+After removing the max and min (Outliers):
+Average = 2.363400
+Std. Deviation = 0.111171
+ 
+6 : ../../data/A-1000.csv, ../../data/B-1000-50-0.csv
+Query 1 -
+0.0
+0.0
+0.0
+0.001
+0.0
+0.0
+0.0
+After removing the max and min (Outliers):
+Average = 0.000000
+Std. Deviation = 0.000000
+ 
+Query 2 -
+0.009
+0.01
+0.011
+0.011
+0.014
+0.017
+0.009
+After removing the max and min (Outliers):
+Average = 0.011000
+Std. Deviation = 0.001673
+ 
+Query 3 -
+0.02
+0.019
+0.021
+0.019
+0.022
+0.018
+0.022
+After removing the max and min (Outliers):
+Average = 0.020200
+Std. Deviation = 0.001166
+ 
+Query 4 -
+13.277
+11.403
+11.657
+10.967
+11.56
+12.058
+10.574
+After removing the max and min (Outliers):
+Average = 11.529000
+Std. Deviation = 0.354656
+ 
+7 : ../../data/A-10000.csv, ../../data/B-10000-5-3.csv
+Query 1 -
+0.004
+0.003
+0.004
+0.005
+0.004
+0.003
+0.003
+After removing the max and min (Outliers):
+Average = 0.003600
+Std. Deviation = 0.000490
+ 
+Query 2 -
+0.012
+0.011
+0.015
+0.013
+0.017
+0.015
+0.013
+After removing the max and min (Outliers):
+Average = 0.013600
+Std. Deviation = 0.001200
+ 
+Query 3 -
+0.031
+0.029
+0.046
+0.037
+0.07
+0.036
+0.038
+After removing the max and min (Outliers):
+Average = 0.037600
+Std. Deviation = 0.004841
+ 
+Query 4 -
+125.026
+125.868
+120.403
+111.212
+111.049
+112.026
+111.143
+After removing the max and min (Outliers):
+Average = 115.962000
+Std. Deviation = 5.712371
+ 
+8 : ../../data/A-10000.csv, ../../data/B-10000-50-0.csv
+Query 1 -
+0.004
+0.004
+0.004
+0.007
+0.004
+0.004
+0.003
+After removing the max and min (Outliers):
+Average = 0.004000
+Std. Deviation = 0.000000
+ 
+Query 2 -
+0.099
+0.105
+0.096
+0.091
+0.098
+0.107
+0.109
+After removing the max and min (Outliers):
+Average = 0.101000
+Std. Deviation = 0.004243
+ 
+Query 3 -
+0.188
+0.221
+0.175
+0.19
+0.183
+0.178
+0.185
+After removing the max and min (Outliers):
+Average = 0.184800
+Std. Deviation = 0.004167
+ 
+Query 4 -
+824.596
+825.624
+825.731
+825.622
+827.637
+829.478
+830.038
+After removing the max and min (Outliers):
+Average = 826.818400
+Std. Deviation = 1.535186
+ 
+9 : ../../data/A-10000.csv, ../../data/B-10000-500-1.csv
+Query 1 -
+0.004
+0.003
+0.003
+0.003
+0.003
+0.003
+0.003
+After removing the max and min (Outliers):
+Average = 0.003000
+Std. Deviation = 0.000000
+ 
+Query 2 -
+0.03
+0.03
+0.03
+0.031
+0.03
+0.031
+0.031
+After removing the max and min (Outliers):
+Average = 0.030400
+Std. Deviation = 0.000490
+ 
+Query 3 -
+1.629
+1.608
+1.6
+1.588
+1.654
+1.574
+1.567
+After removing the max and min (Outliers):
+Average = 1.599800
+Std. Deviation = 0.018573
+ 
+Query 4 -
+365.752
+358.607
+348.719
+367.914
+358.812
+361.972
+36.019
+After removing the max and min (Outliers):
+Average = 358.772400
+Std. Deviation = 5.657774
  
