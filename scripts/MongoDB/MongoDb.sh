@@ -24,7 +24,7 @@ declare -a barr=("B-100-3-4.csv"
                 )
 
 path="../../data/" # set the path of the directory in which data is stored
-
+compstr="\"millis\""
 for i in {0..8}
 do
     apath="$path${aarr[i]}"
@@ -39,18 +39,30 @@ do
     mongoimport --type csv -d test -c B --headerline $bpath
 
 
-    #for query1:
+    #for query2:
     echo "Query 1 -"
     for j in {0..6}
     do
         mongo test --eval '
+            db.setProfilingLevel(0)
+            db.system.profile.drop()
             db.setProfilingLevel(2)
             pointer = db.A.find({A1 : {$lte : 50}}, {A1: true, A2: true, _id: false})
-            while(pointer.hasNext()){printjson(pointer.next());}
-            db.system.profile.find({}, {millis: 1}).limit(1).sort({ts: -1})
+            while(pointer.hasNext()) {printjson(pointer.next());}
+        ' > query.txt
+        mongo test --eval '
+            db.system.profile.find({}, {millis: 1})
         ' > query_output.txt
-        time_info=$( tail -n 1  query_output.txt )
-        time_info=$(echo $time_info| awk '{print $4}')
+        time_info=0
+        lines=`cat query_output.txt`
+        while read line || [[ -n $line ]];
+        do
+            second=$(echo $line | awk '{print $2}')
+            ans=$(echo $line | awk '{print $4}')
+            if [ $second = $compstr ]; then
+                time_info=$(($time_info + $ans))
+            fi
+        done <<< "$(echo -e "$lines")"
         echo $time_info
         mongo test --eval '
             db.A.getPlanCache().clear()
@@ -64,13 +76,25 @@ do
     for j in {0..6}
     do
         mongo test --eval '
+            db.setProfilingLevel(0)
+            db.system.profile.drop()
             db.setProfilingLevel(2)
             pointer = db.B.aggregate([{$sort: {B3 : 1} },{$project: {_id: false, B1: true, B2: true, B3: true}}],{ "allowDiskUse" : true })
             while(pointer.hasNext()) {printjson(pointer.next());}
-            db.system.profile.find({}, {millis: 1}).limit(1).sort({ts: -1})
+        ' > query.txt
+        mongo test --eval '
+            db.system.profile.find({}, {millis: 1})
         ' > query_output.txt
-        time_info=$( tail -n 1  query_output.txt )
-        time_info=$(echo $time_info| awk '{print $4}')
+        time_info=0
+        lines=`cat query_output.txt`
+        while read line || [[ -n $line ]];
+        do
+            second=$(echo $line | awk '{print $2}')
+            ans=$(echo $line | awk '{print $4}')
+            if [ $second = $compstr ]; then
+                time_info=$(($time_info + $ans))
+            fi
+        done <<< "$(echo -e "$lines")"
         echo $time_info
         mongo test --eval '
             db.A.getPlanCache().clear()
@@ -84,13 +108,25 @@ do
     for j in {0..6}
     do
         mongo test --eval '
+            db.setProfilingLevel(0)
+            db.system.profile.drop()
             db.setProfilingLevel(2)
-            pointer = db.B.aggregate([{$group: {_id: "$B2", total: {$sum: 1}}},{$group: {_id: null, answer: {$avg: "$total"}}},{$project: {_id: false,answer: true}}]);
+            pointer = db.B.aggregate([{$group: {_id: "$B2", total: {$sum: 1}}},{$group: {_id: null, answer: {$avg: "$total"}}},{$project: {_id: false,answer: true}}])
             while(pointer.hasNext()) {printjson(pointer.next());}
-            db.system.profile.find({}, {millis: 1}).limit(1).sort({ts: -1})
+        ' > query.txt
+        mongo test --eval '
+            db.system.profile.find({}, {millis: 1})
         ' > query_output.txt
-        time_info=$( tail -n 1  query_output.txt )
-        time_info=$(echo $time_info| awk '{print $4}')
+        time_info=0
+        lines=`cat query_output.txt`
+        while read line || [[ -n $line ]];
+        do
+            second=$(echo $line | awk '{print $2}')
+            ans=$(echo $line | awk '{print $4}')
+            if [ $second = $compstr ]; then
+                time_info=$(($time_info + $ans))
+            fi
+        done <<< "$(echo -e "$lines")"
         echo $time_info
         mongo test --eval '
             db.A.getPlanCache().clear()
@@ -104,13 +140,25 @@ do
     for j in {0..6}
     do
         mongo test --eval '
+            db.setProfilingLevel(0)
+            db.system.profile.drop()
             db.setProfilingLevel(2)
-            pointer = db.B.aggregate([{$lookup: {from: "A",localField: "B2",foreignField: "A1",as: "temp"}},{$match: {"temp": {$ne: []}}},{$project:{_id: false,B1: true,B2: true,B3: true,A2: {$arrayElemAt: ["$temp.A2", 0]},}}]);
+            pointer = db.B.aggregate([{$lookup: {from: "A",localField: "B2",foreignField: "A1",as: "temp"}},{$match: {"temp": {$ne: []}}},{$project:{_id: false,B1: true,B2: true,B3: true,A2: {$arrayElemAt: ["$temp.A2", 0]},}}])
             while(pointer.hasNext()) {printjson(pointer.next());}
-            db.system.profile.find({}, {millis: 1}).limit(1).sort({ts: -1})
+        ' > query.txt
+        mongo test --eval '
+            db.system.profile.find({}, {millis: 1})
         ' > query_output.txt
-        time_info=$( tail -n 1  query_output.txt )
-        time_info=$(echo $time_info| awk '{print $4}')
+        time_info=0
+        lines=`cat query_output.txt`
+        while read line || [[ -n $line ]];
+        do
+            second=$(echo $line | awk '{print $2}')
+            ans=$(echo $line | awk '{print $4}')
+            if [ $second = $compstr ]; then
+                time_info=$(($time_info + $ans))
+            fi
+        done <<< "$(echo -e "$lines")"
         echo $time_info
         mongo test --eval '
             db.A.getPlanCache().clear()

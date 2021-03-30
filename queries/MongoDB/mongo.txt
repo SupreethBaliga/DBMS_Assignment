@@ -9,8 +9,8 @@ exit
 
 cmd>
 #run on the normal terminal (change path accordingly)
-mongoimport --type csv -d test -c A --headerline ../../data/A-10000.csv
-mongoimport --type csv -d test -c B --headerline ../../data/B-10000-50-0.csv
+mongoimport --type csv -d test -c A --headerline ../../data/A-100.csv
+mongoimport --type csv -d test -c B --headerline ../../data/B-100-3-4.csv
 
 mongo>
 # run inside the mongo shell

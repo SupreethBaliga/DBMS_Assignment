@@ -7,7 +7,7 @@ create table A(
     A1 integer primary key,
     A2 varchar(32000)
 );
-LOAD DATA LOCAL INFILE '../../data/A-10000.csv'
+LOAD DATA LOCAL INFILE '../../data/A-100.csv'
 INTO TABLE A
 FIELDS TERMINATED BY ','
 IGNORE 1 LINES;
@@ -19,7 +19,7 @@ create table B(
     B3 varchar(32000),
     foreign key (B2) references A(A1) ON DELETE CASCADE
 );
-LOAD DATA LOCAL INFILE '../../data/B-10000-500-1.csv'
+LOAD DATA LOCAL INFILE '../../data/B-100-3-4.csv'
 INTO TABLE B
 FIELDS TERMINATED BY ','
 IGNORE 1 LINES;

@@ -1,6 +1,7 @@
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+from tabulate import tabulate
 
 files =["A-100.csv, B-100-3-4.csv",
         "A-100.csv, B-100-5-0.csv",
@@ -13,22 +14,22 @@ files =["A-100.csv, B-100-3-4.csv",
         "A-10000.csv, B-10000-500-1.csv"
     ]
 # populating sqlite3
-print("######################## For Sqlite3 ################################")
+# print("######################## For Sqlite3 ################################")
 sqlite3 = []
 with open('./Sqlite3/time_stats.txt', 'r') as f:
     data = f.readlines()
 data_ptr = 0
 for i in range(9):
-    print(data[data_ptr][:-1])
+    # print(data[data_ptr][:-1])
     data_ptr += 1
     quers = []
 
     for k in range(4):
-        print(data[data_ptr][:-1])
+        # print(data[data_ptr][:-1])
         data_ptr += 1
         temp = []
         for x in range(7):
-            print(data[data_ptr][:-1])
+            # print(data[data_ptr][:-1])
             temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
         temp.sort()
@@ -36,31 +37,31 @@ for i in range(9):
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
-        print(f'After removing the max and min (Outliers):')
-        print(f'Average = {quers[-1][0]:.6f}')
-        print(f'Std. Deviation = {quers[-1][1]:.6f}')
-        print(" ")
+        # print(f'After removing the max and min (Outliers):')
+        # print(f'Average = {quers[-1][0]:.6f}')
+        # print(f'Std. Deviation = {quers[-1][1]:.6f}')
+        # print("")
         data_ptr += 1
     sqlite3.append(quers)
 f.close()
 
 # populating MariaDB w/o index
-print("###################### For MariaDB without index ###################")
+# print("###################### For MariaDB without index ###################")
 maria = []
 with open('./MariaDB/time_stats.txt', 'r') as f:
     data = f.readlines()
 data_ptr = 0
 for i in range(9):
-    print(data[data_ptr][:-1])
+    # print(data[data_ptr][:-1])
     data_ptr += 1
     quers = []
 
     for k in range(4):
-        print(data[data_ptr][:-1])
+        # print(data[data_ptr][:-1])
         data_ptr += 1
         temp = []
         for x in range(7):
-            print(data[data_ptr][:-1])
+            # print(data[data_ptr][:-1])
             temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
         temp.sort()
@@ -68,31 +69,31 @@ for i in range(9):
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
-        print(f'After removing the max and min (Outliers):')
-        print(f'Average = {quers[-1][0]:.6f}')
-        print(f'Std. Deviation = {quers[-1][1]:.6f}')
-        print(" ")
+        # print(f'After removing the max and min (Outliers):')
+        # print(f'Average = {quers[-1][0]:.6f}')
+        # print(f'Std. Deviation = {quers[-1][1]:.6f}')
+        # print("")
         data_ptr += 1
     maria.append(quers)
 f.close()
 
 # populating MariaDB with index
-print("####################### For MariaDB with index######################")
+# print("####################### For MariaDB with index######################")
 mariaidx = []
 with open('./MariaDbIndex/time_stats.txt', 'r') as f:
     data = f.readlines()
 data_ptr = 0
 for i in range(9):
-    print(data[data_ptr][:-1])
+    # print(data[data_ptr][:-1])
     data_ptr += 1
     quers = []
 
     for k in range(4):
-        print(data[data_ptr][:-1])
+        # print(data[data_ptr][:-1])
         data_ptr += 1
         temp = []
         for x in range(7):
-            print(data[data_ptr][:-1])
+            # print(data[data_ptr][:-1])
             temp.append(float(data[data_ptr][:-1]))
             data_ptr += 1
         temp.sort()
@@ -100,31 +101,31 @@ for i in range(9):
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
-        print(f'After removing the max and min (Outliers):')
-        print(f'Average = {quers[-1][0]:.6f}')
-        print(f'Std. Deviation = {quers[-1][1]:.6f}')
-        print(" ")
+        # print(f'After removing the max and min (Outliers):')
+        # print(f'Average = {quers[-1][0]:.6f}')
+        # print(f'Std. Deviation = {quers[-1][1]:.6f}')
+        # print("")
         data_ptr += 1
     mariaidx.append(quers)
 f.close()
 
 # populating MongoDb
-print("################################For MongoDb################################")
+# print("################################For MongoDb################################")
 mongo = []
 with open('./MongoDB/time_stats.txt', 'r') as f:
     data = f.readlines()
 data_ptr = 0
 for i in range(9):
-    print(data[data_ptr][:-1])
+    # print(data[data_ptr][:-1])
     data_ptr += 1
     quers = []
 
     for k in range(4):
-        print(data[data_ptr][:-1])
+        # print(data[data_ptr][:-1])
         data_ptr += 1
         temp = []
         for x in range(7):
-            print(float(data[data_ptr][:-1])/1000)
+            # print(float(data[data_ptr][:-1])/1000)
             temp.append(float(data[data_ptr][:-1])/1000)
             data_ptr += 1
         temp.sort()
@@ -132,10 +133,10 @@ for i in range(9):
         avg = np.mean(arr)
         std = np.std(arr)
         quers.append([avg, std])
-        print(f'After removing the max and min (Outliers):')
-        print(f'Average = {quers[-1][0]:.6f}')
-        print(f'Std. Deviation = {quers[-1][1]:.6f}')
-        print(" ")
+        # print(f'After removing the max and min (Outliers):')
+        # print(f'Average = {quers[-1][0]:.6f}')
+        # print(f'Std. Deviation = {quers[-1][1]:.6f}')
+        # print("")
         data_ptr += 1
     mongo.append(quers)
 f.close()
@@ -143,6 +144,22 @@ f.close()
 # Creating corresponding graph visualisations
 # All times are in seconds
 # The times are stored in sqlite3,maria,mariaidx,mongo
+database_name = ["Sqlite3", "MariaDB(without index)", "MariaDB(with index)", "MongoDB"]
+table = []
+all_data = [sqlite3, maria, mariaidx, mongo]
+for query in range(4):
+    for database in range(4):
+        row = []
+        row.append("Query " + str(query+1))
+        row.append(database_name[database])
+        for col in range(9):
+            row.append(str(f'Avg:{all_data[database][col][query][0]:.6f}\nDev:{all_data[database][col][query][1]:.6f}'))
+        table.append(row)
+
+topics = ["     "]
+for i in range(9):
+    topics.append(str(i+1))
+print(tabulate(table, headers=topics, tablefmt="grid"))
 
 # For each database plotting the trend in time for 4 queries for 9 files
 # for sqlite3  

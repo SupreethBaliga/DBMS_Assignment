@@ -7,7 +7,7 @@ create table A(
     A1 integer primary key,
     A2 text
 );
-.import ../../data/A-10000.csv A
+.import ../../data/A-100.csv A
 
 drop table if exists B;
 create table B(
@@ -16,4 +16,4 @@ create table B(
     B3 text,
     foreign key (B2) references A(A1)
 );
-.import ../../data/B-10000-500-1.csv B 
+.import ../../data/B-100-3-4.csv B 
