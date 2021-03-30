@@ -25,7 +25,7 @@ declare -a barr=("B-100-3-4.csv"
 
 path="../../data/" # set the path of the directory in which data is stored
 compstr="\"millis\""
-for i in {0..8}
+for i in {0..5}
 do
     apath="$path${aarr[i]}"
     bpath="$path${barr[i]}"
@@ -41,7 +41,7 @@ do
 
     #for query2:
     echo "Query 1 -"
-    for j in {0..6}
+    for j in {0..2}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
@@ -73,7 +73,7 @@ do
 
     #for query2:
     echo "Query 2 -"
-    for j in {0..6}
+    for j in {0..2}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
@@ -105,7 +105,7 @@ do
 
     #for query3:
     echo "Query 3 -"
-    for j in {0..6}
+    for j in {0..2}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
@@ -137,13 +137,13 @@ do
 
     #for query4:
     echo "Query 4 -"
-    for j in {0..6}
+    for j in {0..2}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
             db.system.profile.drop()
             db.setProfilingLevel(2)
-            pointer = db.B.aggregate([{$lookup: {from: "A",localField: "B2",foreignField: "A1",as: "temp"}},{$match: {"temp": {$ne: []}}},{$project:{_id: false,B1: true,B2: true,B3: true,A2: {$arrayElemAt: ["$temp.A2", 0]},}}])
+            pointer = db.B.aggregate([{$lookup: {from: "A",localField: "B2",foreignField: "A1",as: "temp"}},{$unwind: {path: "$temp",preserveNullAndEmptyArrays: false}},{$project:{_id: false,B1: true,B2: true,B3: true,A2: "$temp.A2"}}])
             while(pointer.hasNext()) {printjson(pointer.next());}
         ' > query.txt
         mongo test --eval '
