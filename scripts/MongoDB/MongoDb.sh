@@ -25,7 +25,7 @@ declare -a barr=("B-100-3-4.csv"
 
 path="../../data/" # set the path of the directory in which data is stored
 compstr="\"millis\""
-for i in {0..5}
+for i in {0..8}
 do
     apath="$path${aarr[i]}"
     bpath="$path${barr[i]}"
@@ -41,7 +41,7 @@ do
 
     #for query2:
     echo "Query 1 -"
-    for j in {0..2}
+    for j in {0..6}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
@@ -73,7 +73,7 @@ do
 
     #for query2:
     echo "Query 2 -"
-    for j in {0..2}
+    for j in {0..6}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
@@ -105,7 +105,7 @@ do
 
     #for query3:
     echo "Query 3 -"
-    for j in {0..2}
+    for j in {0..6}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
@@ -137,7 +137,7 @@ do
 
     #for query4:
     echo "Query 4 -"
-    for j in {0..2}
+    for j in {0..6}
     do
         mongo test --eval '
             db.setProfilingLevel(0)
